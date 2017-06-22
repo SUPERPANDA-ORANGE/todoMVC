@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link href="final.css" type="text/css" rel="stylesheet">
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    </head>
+
+    <body>
+        <div id="all-div">
+        <div id="todoMVC">
+            <h1>To Do MVC</h1>
+        </div>
+        <div id="input">
+            <div id="allNotFinish"></div>
+            <div id="allFinish"></div>
+            <input type="text" id="cin" placeholder="What to do next" autofocus class="new-todo">
+        </div>
+        <div id="show-list">
+            <ul id="show-list-ul"></ul>
+            <!--todo list-->
+        </div>
+        <div id="control">
+            <ul>
+                <li class="control">
+                    <label class="con" id="All" >All</label>
+                </li>
+                <li class="control">
+                    <label class="con" id="Active">Active</label>
+                </li>
+                <li class="control">
+                    <label class="con" id="Complete">Complete</label>
+                </li>
+                <li class="control">
+                    <label class="con" id="clearComplete">clearComplete</label>
+                </li>
+            </ul>
+            <p id="show-todo">0 things left</p>
+        </div>
+        </div>
+
+    <script src="final.js" type="text/javascript"></script>
+    </body>
+</html>

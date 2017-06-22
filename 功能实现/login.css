@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    top:100px;
+}
+
+#button:hover{
+    transform: rotate(360deg);
+    transition: all 0.5s;
+}
+
+#poem{
+    color: white;
+    font-size: 50pt;
+    position: relative;
+    top:150px;
+    margin: 20px;
+}

@@ -1,0 +1,179 @@
+body{
+    background-color: black;
+}
+h1 , p , label {
+    text-align: center;
+    color: white;
+}
+
+#show-list{
+    text-align: center;
+}
+
+#input{
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+
+#control{
+}
+
+.control{
+    display: inline;
+    text-align: center;
+}
+
+
+
+ul{
+    text-align: center;
+}
+
+.con{
+    border: 2px solid whitesmoke;
+    border-radius: 2px;
+    cursor:pointer
+    
+}
+
+#show-list-ul  li  div{
+    border: 2px solid black;
+    height: 60px;
+    padding: 10px;
+}
+
+#show-list-ul  li  div:hover{
+    background-color: #CCCCFF;
+    transition-duration: 1s;
+}
+
+.toggle{
+    position: absolute;
+    left: -99999px;
+}
+
+.todo{
+    font-size: 20pt;
+}
+
+button {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 2px #ffff99;
+  color: #ffff99;
+  font-size: inherit;
+  font-weight: 700;
+  margin: 1em;
+  padding: 1em 2em;
+  text-align: center;
+  text-transform: capitalize;
+  position: relative;
+  vertical-align: middle;
+}
+button::before, button::after {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}            
+
+.destroy {
+  -webkit-transition: color 0.25s;
+          transition: color 0.25s;
+          bottom: 10px;
+}        
+button::before, button::after {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+ 
+.destroy {
+  -webkit-transition: color 0.25s;
+          transition: color 0.25s;
+}
+.destroy::before, .destroy::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.destroy::before {
+  top: 0;
+  left: 0;
+}
+.destroy::after {
+  bottom: 0;
+  right: 0;
+}               
+
+.destroy:hover {
+  color: #60daaa;
+}
+.destroy:hover::before, .destroy:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.destroy:hover::before {
+  border-top-color: #60daaa;
+  border-right-color: #60daaa;
+  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+          transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.destroy:hover::after {
+  border-bottom-color: #60daaa;
+  border-left-color: #60daaa;
+  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+          transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}              
+
+#all-div{
+    width: 50%;
+    text-align: center;
+    position:relative;
+    transform:translate(-50%,0);
+    left:50%;
+
+}
+
+input{
+    width: 60%;
+    height: 40px;
+}
+
+#allFinish{
+    border:2px solid white;
+    border-radius: 25px;
+    display: inline;
+        width: 30px;
+    height: 30px;
+    float: left;
+    position: absolute;
+    left: 85px;
+}
+
+#allNotFinish{
+    border:2px solid white;
+    border-radius: 25px;
+    display: inline;
+    width: 30px;
+    height: 30px;
+    float: left;
+    position: absolute;
+    left: 45px;
+}
+
+#allFinish:hover{
+    background-color: red;
+    transition-duration: 1s;
+}
+
+#allNotFinish:hover{
+    background-color: green;
+    transition-duration: 1s;
+}
